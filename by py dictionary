@@ -1,0 +1,13 @@
+#counts the occurrence of each character in the string
+
+s = 'Hello LSML 2018!!'
+my_dict = {}
+element=[]
+n = len(s)
+my_dict['%s' % s[0]] = s.count(s[0])
+element.append(s[0])
+for i in range(1,n):
+    if s[i] not in element:
+        my_dict['%s' % s[i]] = s.count(s[i])
+    element.append(s[i])
+print my_dict    
