@@ -1,0 +1,19 @@
+code_dict = {'e': 'a', 'o':'e', 'l': 'm'}
+s = 'Hello world!'
+
+s_coded = ''
+for i in s:
+    if i in code_dict:
+        i = code_dict[i]
+    s_coded += i
+print s_coded
+
+
+
+s_decoded = ''
+s_coded = 'Pythen is ceem!'
+for i in s_coded:
+    if i in code_dict.values():
+        i = code_dict.keys()[code_dict.values().index(i)]
+    s_decoded += i
+print s_decoded
